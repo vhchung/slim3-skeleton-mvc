@@ -8,7 +8,7 @@ This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash
 
        `$ composer create-project -n -s dev vhchung/slim3-skeleton-mvc your-app`
 
-1. Execute `sql\blog.sql` to create sample database (MySQL)
+1. Execute `your-app\sql\blog.sql` to create sample database (MySQL)
 2. Generate models (Doctrine entities):
 
 ```
