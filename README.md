@@ -4,7 +4,11 @@ This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash
 
 ## Prepare
 
-1. Run `blog.sql` to create sample database (MySQL)
+1. Create your project:
+
+       `$ composer create-project -n -s dev vhchung/slim3-skeleton-mvc your-app`
+
+1. Execute `sql\blog.sql` to create sample database (MySQL)
 2. Generate models (Doctrine entities):
 
 ```
@@ -18,9 +22,8 @@ $ php entities_generator.php
 ### Run it:
 
 1. `$ cd your-app`
-2. `$ composer install`
-3. `$ php -S 0.0.0.0:8888 -t public/`
-4. Browse to http://localhost:8888
+2. `$ php -S 0.0.0.0:8888 -t public/`
+3. Browse to http://localhost:8888
 
 ## Key directories
 
