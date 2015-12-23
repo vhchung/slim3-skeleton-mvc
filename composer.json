@@ -13,7 +13,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "app/src"
+            "App\\Controller\\": "app/src/controllers",
+            "App\\Model\\": "app/src/models"
         }
     },
     "require": {

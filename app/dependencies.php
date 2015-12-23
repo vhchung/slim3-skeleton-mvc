@@ -28,6 +28,19 @@ $container['flash'] = function ($c) {
 // Service factories
 // -----------------------------------------------------------------------------
 
+// doctrine EntityManager
+$container['em'] = function ($c) {
+    $settings = $c->get('settings');
+    $config = \Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration(
+        $settings['doctrine']['meta']['entity_path'],
+        $settings['doctrine']['meta']['auto_generate_proxies'],
+        $settings['doctrine']['meta']['proxy_dir'],
+        $settings['doctrine']['meta']['cache'],
+        false
+    );
+    return \Doctrine\ORM\EntityManager::create($settings['doctrine']['connection'], $config);
+};
+
 // monolog
 $container['logger'] = function ($c) {
     $settings = $c->get('settings');
@@ -41,6 +54,6 @@ $container['logger'] = function ($c) {
 // Action factories
 // -----------------------------------------------------------------------------
 
-$container['App\Action\HomeAction'] = function ($c) {
-    return new App\Action\HomeAction($c->get('view'), $c->get('logger'));
+$container['App\Controller\HomeController'] = function ($c) {
+    return new App\Controller\HomeController($c->get('view'), $c->get('logger'), $c->get('em'));
 };

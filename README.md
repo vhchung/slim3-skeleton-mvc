@@ -2,15 +2,25 @@
 
 This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash messages and Monolog.
 
-## Create your project:
+## Prepare
 
-    $ composer create-project -n -s dev vhchung/slim3-skeleton-mvc my-app
+1. Run `blog.sql` to create sample database (MySQL)
+2. Generate models (Doctrine entities):
+
+```
+
+$ cd your-app
+$ php entities_generator.php
+
+```
+
 
 ### Run it:
 
-1. `$ cd my-app`
-2. `$ php -S 0.0.0.0:8888 -t public/`
-3. Browse to http://localhost:8888
+1. `$ cd your-app`
+2. `$ composer install`
+3. `$ php -S 0.0.0.0:8888 -t public/`
+4. Browse to http://localhost:8888
 
 ## Key directories
 
@@ -21,6 +31,7 @@ This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash
 * `log`: Log files
 * `public`: Webserver root
 * `vendor`: Composer dependencies
+* `sql`: sql dump file for sample database
 
 ## Key files
 
