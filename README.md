@@ -1,4 +1,4 @@
-# Slim 3 Skeleton
+# Slim 3 MVC Skeleton
 
 This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash messages and Monolog.
 
