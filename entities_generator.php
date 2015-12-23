@@ -37,4 +37,6 @@ $generator->setUpdateEntityIfExists(true);
 $generator->setGenerateStubMethods(true);
 $generator->setGenerateAnnotations(true);
 $generator->generate($metadata, __DIR__ . '/app/src/models');
-print 'Generated models!' . PHP_EOL;
+print '-------------------------------------------' . PHP_EOL;
+print ' Done! Generated models to `app\src\models`' . PHP_EOL;
+print '-------------------------------------------' . PHP_EOL;

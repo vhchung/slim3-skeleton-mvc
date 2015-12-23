@@ -17,7 +17,7 @@ $ cd your-app
 $ php entities_generator.php
 
 ```
-
+ Notice: Delete all models before re-generate to update models.
 
 ### Run it:
 
