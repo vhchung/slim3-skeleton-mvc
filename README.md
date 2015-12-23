@@ -2,6 +2,8 @@
 
 This is a simple skeleton project for Slim 3 that includes Doctrine, Twig, Flash messages and Monolog.
 
+Base on https://github.com/akrabat/slim3-skeleton
+
 ## Prepare
 
 1. Create your project:
