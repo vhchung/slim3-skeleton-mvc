@@ -2,20 +2,19 @@
 
 namespace App\Controller;
 
-use Slim\Views\Twig;
-use Psr\Log\LoggerInterface;
-use \Doctrine\ORM\EntityManager as EntityManager;
-
+use Slim\Container;
 class BaseController
 {
     protected $view;
     protected $logger;
+    protected $flash;
     protected $em;  // Entities Manager
 
-    public function __construct(Twig $view, LoggerInterface $logger, EntityManager $em)
+    public function __construct(Container $c)
     {
-        $this->view = $view;
-        $this->logger = $logger;
-        $this->em = $em;
+        $this->view = $c->get('view');
+        $this->logger = $c->get('logger');
+        $this->flash = $c->get('flash');
+        $this->em = $c->get('em');
     }
 }

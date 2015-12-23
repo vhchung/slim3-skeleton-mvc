@@ -19,6 +19,9 @@ $ cd your-app
 $ php entities_generator.php
 
 ```
+
+ Add namespace for each model: `namespace App\Model;`
+
  Notice: Delete all models before re-generate to update models.
 
 ### Run it:

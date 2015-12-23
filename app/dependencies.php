@@ -51,9 +51,9 @@ $container['logger'] = function ($c) {
 };
 
 // -----------------------------------------------------------------------------
-// Action factories
+// Controller factories
 // -----------------------------------------------------------------------------
 
 $container['App\Controller\HomeController'] = function ($c) {
-    return new App\Controller\HomeController($c->get('view'), $c->get('logger'), $c->get('em'));
+    return new App\Controller\HomeController($c);
 };

@@ -9,6 +9,14 @@
 <h1>Slim</h1>
 <div>a microframework for PHP</div>
 
+{% if flash %}
+<div style="margin:30px auto;">
+    {% for f in flash %}
+        <p>{{ f }}</p>
+    {% endfor %}
+</div>
+{% endif %}
+
 <div style="margin-top: 30px">
     {% if post %}
         <h2>{{ post.title }}</h2>
