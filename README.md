@@ -11,7 +11,7 @@ Base on https://github.com/akrabat/slim3-skeleton
        `$ composer create-project -n -s dev vhchung/slim3-skeleton-mvc your-app`
 
 1. Execute `your-app\sql\blog.sql` to create sample database (MySQL)
-2. Change database connection settings at entities_generator.php and app/settings.php
+2. Change database connection settings at `entities_generator.php` and `app/settings.php`
 3. Generate models (Doctrine entities):
 
 ```
