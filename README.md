@@ -31,6 +31,10 @@ $ php entities_generator.php
 2. `$ php -S 0.0.0.0:8888 -t public/`
 3. Browse to http://localhost:8888
 
+### Notice
+
+Set `logs` and `cache` folder permission to writable when deploy to production environment
+
 ## Key directories
 
 * `app`: Application code

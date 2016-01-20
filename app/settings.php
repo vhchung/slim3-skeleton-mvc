@@ -1,6 +1,8 @@
 <?php
 return [
     'settings' => [
+        // comment this line when deploy to production environment
+        'displayErrorDetails' => true,
         // View settings
         'view' => [
             'template_path' => __DIR__ . '/templates',
